@@ -269,6 +269,7 @@
                     @php
                         $product_lists=DB::table('products')->where('status','active')->orderBy('id','DESC')->limit(6)->get();
                     @endphp
+
                     @foreach($product_lists as $product)
                         <div class="col-md-4">
                             <!-- Start Single List  -->
